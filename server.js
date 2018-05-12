@@ -9,7 +9,7 @@ var friends = require('./app/data/friends.js')
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -51,14 +51,6 @@ app.post("/api/friends", function(req, res) {
 
   res.json(friends.Friends[match]);
 
-  //$("#match-name").text(friends.Friends[match].name);
-  //$("#match-img").attr("src", friends.Friends[match].photo);
-
-  // Show the modal with the best match
-  //$("#results-modal").modal("toggle");
-
-
-  //res.json(friends);
 });
 
 
