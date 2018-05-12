@@ -5,6 +5,7 @@ var bodyParser = require("body-parser");
 var path = require("path");
 var friends = require('./app/data/friends.js')
 
+
 // Sets up the Express App
 // =============================================================
 var app = express();
@@ -13,7 +14,6 @@ var PORT = 3000;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 
 
 // Routes
@@ -34,8 +34,8 @@ app.get("/api/friends", function(req, res) {
 });
 
 app.post("/api/friends", function(req, res) {
-  // req.body hosts is equal to the JSON post sent from the user
-  // This works because of our body-parser middleware
+  //req.body hosts is equal to the JSON post sent from the user
+ // This works because of our body-parser middleware
   var newfriend = req.body;
   var match;
 
@@ -43,11 +43,13 @@ app.post("/api/friends", function(req, res) {
 
   console.log("logged from server.js ",newfriend);
 
- // friends.Friends.push(newfriend);
+ friends.Friends.push(newfriend);
 
   match = findMatch(newfriend.scores);
 
   console.log("match index: " + match);
+
+  res.json(friends.Friends[match]);
 
   //$("#match-name").text(friends.Friends[match].name);
   //$("#match-img").attr("src", friends.Friends[match].photo);
@@ -56,7 +58,7 @@ app.post("/api/friends", function(req, res) {
   //$("#results-modal").modal("toggle");
 
 
-  res.json(friends);
+  //res.json(friends);
 });
 
 
@@ -92,7 +94,6 @@ function findMatch(newfriendscores){
     return friendscores[0];
 }
   
-
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {

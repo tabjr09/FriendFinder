@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/tabjr09/FriendFinder/issues"
   },
-  "homepage": "https://github.com/tabjr09/FriendFinder#readme"
+  "homepage": "https://github.com/tabjr09/FriendFinder#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
