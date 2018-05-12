@@ -24,7 +24,7 @@
 
   <div class="container">
 
-    <h2>Survey Questions</h2>
+    <h2>Firend Survey</h2>
     <hr>
 
     <h3><strong>About You</strong></h3>
@@ -215,6 +215,8 @@
     $("#submit").on("click", function(event) {
       event.preventDefault();
 
+      
+
       // Form validation
       function validateForm() {
         var isValid = true;
@@ -236,6 +238,8 @@
       // If all required fields are filled
       if (validateForm()) {
         // Create an object for the user"s data
+
+        console.log("validation complete");
         var userData = {
           name: $("#name").val(),
           photo: $("#photo").val(),
@@ -252,8 +256,10 @@
             $("#q10").val()
           ]
         };
-
-        // AJAX post the data to the friends API.
+        console.log(userData);
+ 
+   
+       //AJAX post the data to the friends API.
         $.post("/api/friends", userData, function(data) {
 
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
@@ -268,6 +274,7 @@
         alert("Please fill out all fields before submitting!");
       }
     });
+
   </script>
 
 </body>

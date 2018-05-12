@@ -1,7 +1,7 @@
 var friends = [
 {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"April",
+    "photo":"https://images.pexels.com/photos/773371/pexels-photo-773371.jpeg?auto=compress&cs=tinysrgb&h=350",
     "scores":[
         5,
         1,
@@ -17,7 +17,7 @@ var friends = [
   },
   {
   "name":"Jack",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "photo":"https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg?auto=compress&cs=tinysrgb&h=350",
   "scores":[
       3,
       2,
@@ -33,7 +33,7 @@ var friends = [
 },
 {
     "name":"Boom Boom Barbara",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://images.pexels.com/photos/209895/pexels-photo-209895.jpeg?auto=compress&cs=tinysrgb&h=350",
     "scores":[
         5,
         5,
@@ -49,7 +49,7 @@ var friends = [
   },
   {
     "name":"Plain Jane",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1444453740000/photosp/fec8d9b2-3cbe-4b1f-9495-5156da9a39ea/stock-photo-nature-outdoors-leaf-one-person-light-autumn-orange-joy-female-fec8d9b2-3cbe-4b1f-9495-5156da9a39ea.jpg",
     "scores":[
         2,
         2,
@@ -65,7 +65,7 @@ var friends = [
   },
   {
     "name":"Cool Ken",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://images.pexels.com/photos/683381/pexels-photo-683381.jpeg?auto=compress&cs=tinysrgb&h=350",
     "scores":[
         1,
         2,
@@ -80,8 +80,8 @@ var friends = [
       ]
   },
   {
-    "name":"Cool Ken",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Sassy Stacey",
+    "photo":"https://images.pexels.com/photos/253758/pexels-photo-253758.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "scores":[
         1,
         2,
