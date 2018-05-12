@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/tabjr09/FriendFinder#readme",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "express":"*",
+    "body-parser":"*",
+    "bcrypt": "^0.8.5"
   }
 }
